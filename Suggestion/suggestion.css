@@ -1,0 +1,12 @@
+.my-suggestion-loading {
+  display: none;
+}
+.my-suggestion.loading .my-suggestion-loading {
+  display: block;
+}
+.my-suggestion-empty {
+  display: none;
+}
+.my-suggestion.empty .my-suggestion-empty {
+  display: block;
+}

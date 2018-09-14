@@ -1,0 +1,22 @@
+.my-slides {
+  overflow: hidden;
+  position: relative;
+}
+.my-slides ol {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  transition: transform .5s;
+}
+.my-slides .prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.my-slides .next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

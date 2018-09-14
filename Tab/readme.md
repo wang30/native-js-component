@@ -1,0 +1,1 @@
+html结构必须和示例一致，必须加上tabs, tabs-bar, tabs-content三个class

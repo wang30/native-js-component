@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+  <link rel="stylesheet" href="./suggestion.css">
+  <script src="./Suggestion.js"></script>
+</head>
+<body>
+  <input type="text">
+
+  <script>
+    const s = new Suggestion({
+      input: 'input',
+      search: function(text, callback) {
+        let array = []
+        for(let i=0; i<5; i++){
+          let n = parseInt(Math.random()*100)
+          array.push(text + n)
+        }
+        if(Math.random() > .5)
+          array = []
+        setTimeout(()=>{
+          callback(array)
+        }, 1000)
+      },
+      loadingTemplate: '加载中',
+      emptyTemplate: '没找到'
+    })
+  </script>
+</body>
+</html>
